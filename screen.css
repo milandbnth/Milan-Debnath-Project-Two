@@ -10,8 +10,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
        font-family: "Helvetica Neue", Helvetica, Arial, Helvetica, sans-serif;
-       font-size: 28px; /*18/16 = 1.125-most brow has 16px, 18 mine  */
-       background-color: red;
+       font-size: 18px; /*18/16 = 1.125-most brow has 16px, 18 mine  */
+       background-color: goldenrod;
        line-height: 20px;
        padding: 15px;
     }
