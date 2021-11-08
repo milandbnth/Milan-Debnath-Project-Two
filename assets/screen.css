@@ -1,0 +1,111 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 1.0625em; /*17/16 = 1.0625 */
+  line-height: 1.05555556em; /*19/18 = 1.05555556 */
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2.77777778em; /*50/18 = 2.77777778 */
+  margin-left: 1.11111111em; /*20/18 = 1.11111111 */
+  margin-right: 0.555555556em; /*10/18 = 0.555555556 */
+  margin-bottom: 2.77777778em; /*50/18 = 2.77777778 */
+}
+h1,
+h2,
+h3 {
+  font-weight:bold;
+  padding-top: 0.277777778em; /*5/18 = 0.277777778 */
+  padding-bottom: 0.277777778em;
+}
+a {
+  color:blue;
+}
+a:hover {
+  color: red;
+}
+p {
+  padding-top: 0.277777778em;
+  padding-bottom: 0.277777778em;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+figure {
+  float:center;
+  
+}
+figcaption {
+  display: none;
+  color: #EEE;
+  background: rgba(20, 20,20, 0.9);
+}
+footer {
+  width:fit-content;
+  height: 0.012em;
+  background-color:aqua;
+  padding:1.987em;
+  position:relative;
+  font-size: small;
+}
+#divine-penalty {
+  column-count: 3;
+  column-width: 16.6666667em; /*300/18 = 16.6666667 */
+  background-color: aliceblue;
+}
+#resume {
+  background-color: rgb(255, 251, 197);
+}
+#homepage {
+  background-color: rgba(142, 187, 247, 0.945);
+  color: rgb(138, 55, 41); 
+}
+#profile {
+  float: center;
+}
+#menu {
+  display: flex;
+  gap: 0.555555556em; /*10/18 = 0.555555556 */
+  flex-wrap:wrap;
+}
+/*400/16 = 25 */
+@media screen and (min-width: 25em) { 
+  html {
+    font-size: 1.1875em; /*19/16 = 1.1875 */
+    line-height: 1.16666667em; /*21/18 = 1.16666667 */
+  }
+  figure {
+    position: relative;
+    float: right;
+    padding-left:0.109em;
+  }
+  figcaption {
+    display:block;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    padding: 0.333333333em; /*6/18 = 0.333333333 */
+  }
+  /*750/16 = 46.875 */
+}
+@media screen and (min-width: 46.875em) {
+  #homepage{
+    margin-right: 4.44444444em; /*80/18 = 4.44444444 */
+    margin-left: 4.44444444em;  /*80/18 = 4.44444444 */
+    margin-top: 1.16666667em; /*21/18 = 1.16666667 */
+    font-size: 1.27777778em; /*23/18 = 1.27777778 */
+    line-height: 1.33333333em; /*24/18 = 1.33333333*/
+  }
+  
+}
