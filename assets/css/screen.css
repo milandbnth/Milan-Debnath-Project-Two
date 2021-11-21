@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 /* stylelint-disable*/
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
 /* Begin site styles below */
@@ -12,20 +12,20 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   box-sizing: border-box;
 }
 html {
-  font-size: 22px;
-  line-height: 24px;
+  font-size: 1.375em; /*22/16 = 1.375 */
+  line-height: 1.090909090909091em;  /*24/22 = 1.090909090909091 */
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-right: 10px;
-  margin-bottom: 50px;
+  margin-top: 2.272727272727273em;  /*50/22 = 2.272727272727273 */
+  margin-left: 0.9090909090909091em; /*20/22 = 0.9090909090909091 */
+  margin-right: 0.4545454545454545em; /*10/22 = 0.4545454545454545 */
+  margin-bottom: 2.272727272727273em; /*50/22 = 2.272727272727273 */
 }
 h1,
 h2,
 h3 {
   font-weight:bold;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding-top: 0.4545454545454545em; /*10/22 = 0.4545454545454545 */
+  padding-bottom: 0.2272727272727273em; /*5/22 = 0.2272727272727273*/
 }
 a {
   color:blue;
@@ -34,15 +34,15 @@ a:hover {
   color: red;
 }
 p {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0.4545454545454545em; /*10/22 = 0.4545454545454545 */
+  padding-bottom: 0.4545454545454545em; /*10/22 = 0.4545454545454545 */
 }
 img {
   display: block;
   max-width: 100%;
 }
 nav {
-  padding-top:4px;
+  padding-top:0.1818181818181818em; /*4/22 = 0.1818181818181818 */
 }
 
 figure {
@@ -55,22 +55,22 @@ figcaption {
 }
 footer {
   width:fit-content;
-  height: 25px;
+  height: 1.136363636363636em;  /*25/22 = 1.136363636363636 */
   background-color:aqua;
-  padding:2px;
+  padding:0.0181818181818182em; /*0.4/22 = 0.0181818181818182 */
   position:relative;
   font-size: small;
 }
 #divine-penalty {
   float: right;
   column-count: 3;
-  column-width: 275px;
+  column-width: 12.5em; /*275/22 = 12.5 */
   background-color: aliceblue;
 }
 #persona {
   display:block;
-  padding: 10px;
-  padding-left: 4px;
+  padding: 0.4545454545454545em; /*10/22 = 0.4545454545454545 */
+  padding-left: 0.1818181818181818em; /*4/22 = 0.1818181818181818  */
 }
 #resume {
   background-color: rgb(255, 251, 197);
@@ -84,36 +84,35 @@ footer {
 }
 #menu {
   display: flex;
-  gap: 10px;
+  gap: 0.4545454545454545em; /*10/22 = 0.4545454545454545 */
   flex-wrap:wrap;
 }
 /*400/16 = 25 */
 @media screen and (min-width: 25em) { 
   html {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1.125em; /* 18/16 = 1.125*/
+    line-height: 1.111111111111111em; /* 20/18 = 1.111111111111111*/
   }
   figure {
     position: relative;
     float: right;
-    padding-left:5px;
+    padding-left:0.2777777777777778em; /* 5/18 = 0.2777777777777778 */
   }
   figcaption {
     display:block;
     position: relative;
     width: 100%;
     bottom: 0;
-    padding: 6px;
+    padding: 0.3333333333333333em; /* 6/18 = 0.3333333333333333 */
   }
   /*750/16 = 46.875 */
 }
 @media screen and (min-width: 46.875em) {
   #homepage{
-    margin-right: 80px;
-    margin-left: 80px;
-    margin-top: 20px;
-    font-size: 16px;
-    line-height: 18px;
-  }
-  
+    font-size: 1em; /*16/16 = 1 */
+    line-height: 1.125em; /*18/16 = 1.125*/
+    margin-right: 5em; /*80/16 = 5*/
+    margin-left: 5em; /*80/16 = 5*/
+    margin-top: 1.25em; /*20/16 = 1.25 */
+  } 
 }
